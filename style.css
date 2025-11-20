@@ -7,8 +7,8 @@
   
   body {
     line-height: 1.6;
-    color: #333;
-    background: #f9f9f9;
+    color: #001F3F; /* Deep Navy Blue for general text */
+    background: #FFFFFF; /* White for page background */
   }
   
   .container {
@@ -19,8 +19,8 @@
   }
   
   header {
-    background: #003366;
-    color: #fff;
+    background: #FFD700; /* Golden Yellow for header background */
+    color: #001F3F; /* Deep Navy Blue for text on golden background */
     padding: 1.5rem 0;
     text-align: center;
   }
@@ -28,19 +28,23 @@
   header h1 {
     font-size: 1.8rem;
     letter-spacing: 1px;
+    color: #001F3F; /* Deep Navy Blue for heading on golden background */
   }
   
   .subtitle {
     margin-top: 0.2rem;
     font-weight: 300;
+    color: #001F3F; /* Deep Navy Blue for subtitle on golden background */
   }
   
   nav {
     margin-top: 1rem;
+    background: #001F3F; /* Deep Navy Blue for navigation background */
+    padding: 0.5rem 0; /* Add some padding to the nav section */
   }
   
   nav a {
-    color: #fff;
+    color: #FFFFFF; /* White for nav links on deep navy background */
     text-decoration: none;
     margin: 0 10px;
     font-weight: 500;
@@ -48,6 +52,7 @@
   
   nav a:hover {
     text-decoration: underline;
+    color: #FFD700; /* Golden Yellow for hover on deep navy background */
   }
   
   #hero {
@@ -60,22 +65,23 @@
   #hero h2 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    color: #FFD700; /* Golden Yellow for hero heading */
   }
   
   .btn {
-    background: #003366;
-    color: #fff;
+    background: #001F3F; /* Deep Navy Blue for button background */
+    color: #FFFFFF; /* White for button text */
     padding: 0.8rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
   }
   
   .btn:hover {
-    background: #0055a5;
+    background: #000F1F; /* Darker Deep Navy Blue for hover */
   }
   
   h2 {
-    color: #003366;
+    color: #001F3F; /* Deep Navy Blue for main headings */
     margin-bottom: 1rem;
   }
   
@@ -95,15 +101,15 @@
   }
   
   .service {
-    background: #fff;
+    background: #FFD700; /* Golden Yellow for service card background */
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
   blockquote {
-    background: #e6eef9;
-    border-left: 5px solid #003366;
+    background: #FFF8E1; /* Lighter Golden Yellow for blockquote */
+    border-left: 5px solid #001F3F; /* Deep Navy Blue border */
     padding: 1rem;
     margin-top: 1rem;
     font-style: italic;
@@ -123,7 +129,7 @@
   }
   
   button {
-    background: #003366;
+    background: #001F3F; /* Deep Navy Blue for button background */
     color: white;
     border: none;
     padding: 0.8rem;
@@ -132,15 +138,58 @@
   }
   
   button:hover {
-    background: #0055a5;
+    background: #000F1F; /* Darker Deep Navy Blue for hover */
   }
   
   footer {
-    background: #003366;
-    color: #fff;
+    background: #FFD700; /* Golden Yellow for footer background */
+    color: #001F3F; /* Deep Navy Blue for footer text */
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
     font-size: 0.9rem;
+  }
+  
+  .service h3 {
+    color: #001F3F; /* Deep Navy Blue for service headings */
+    margin-bottom: 0.8rem;
+  }
+  
+  .service ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .service ul li {
+    margin-bottom: 0.4rem;
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  #contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #contact ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    nav a {
+      margin: 0 5px;
+    }
+  
+    #hero h2 {
+      font-size: 1.8rem;
+    }
+  
+    .service, blockquote {
+      padding: 1rem;
+    }
   }
   
